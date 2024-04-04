@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:975050280753:task-definition/demo-deploy:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:975050280753:task-definition/demo-deploy:3",
     "containerDefinitions": [
         {
             "name": "demo-deploy",
-            "image": "975050280753.dkr.ecr.us-east-1.amazonaws.com/demo-deploy",
+            "image": "975050280753.dkr.ecr.us-east-1.amazonaws.com/demo-deploy:6a7666b7150aa4b0c343a5c536c776b16f8fdce4",
             "cpu": 0,
             "portMappings": [
                 {
@@ -36,7 +36,7 @@
     "family": "demo-deploy",
     "executionRoleArn": "arn:aws:iam::975050280753:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -73,13 +73,13 @@
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "cpu": "256",
-    "memory": "512",
+    "cpu": "1024",
+    "memory": "3072",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-04-03T16:02:51.095Z",
+    "registeredAt": "2024-04-04T05:16:17.298Z",
     "registeredBy": "arn:aws:iam::975050280753:user/shreejal",
     "tags": []
 }
